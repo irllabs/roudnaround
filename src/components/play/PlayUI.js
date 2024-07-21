@@ -640,7 +640,7 @@ class PlayUI extends Component {
         if (layer.createdBy !== this.props.user.id) {
             layerLabelString = ""
         }
-        layerGraphic.layerLabel = this.container.plain(layerLabelString)
+        // hiding label = layerGraphic.layerLabel = this.container.plain(layerLabelString)
         layerGraphic.firstStep = null;
         for (let step of layer.steps) {
             const x = Math.round(layerDiameter / 2 + radius * Math.cos(angle) - stepDiameter / 2) + xOffset;
